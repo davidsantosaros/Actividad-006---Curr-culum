@@ -1,0 +1,242 @@
+
+.glyphicons glyphicons-star
+{
+  color:  &#xe006;
+}
+
+
+.ec-stars-wrapper {
+  /* Espacio entre los inline-block (los hijos, los `a`) 
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+  font-size: 0;
+  /* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+  display: inline-block;
+}
+.ec-stars-wrapper a {
+  text-decoration: none;
+  display: inline-block;
+  /* Volver a dar tamaño al texto */
+  font-size: 32px;
+  font-size: 2rem;
+
+  color: rgb(249, 22, 22)
+}
+
+.ec-stars-wrapper:hover a {
+  color: rgb(39, 130, 228);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+  color: red;
+}
+
+
+
+/*termina    */
+.align {
+  text-align: left;
+  margin: 5% 5%;
+}
+
+.hobbies {
+  color: white;
+  background: gray;
+  display: inline;
+  text-align: left;
+}
+
+.silver {
+  background: silver;
+  text-align: left;
+  width: 90%;
+}
+body {
+  color: gray;
+}
+
+.negrita {
+  color: black;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: right;
+  color: silver;
+}
+
+.color-habilidades1 {
+  background: red;
+  color: white;
+  width: 70%;
+}
+
+.color-habilidades2 {
+  background: red;
+  color: white;
+  width: 60%;
+}
+
+.color-habilidades3 {
+  background: red;
+  color: white;
+  width: 50%;
+}
+
+.color-habilidades4 {
+  background: red;
+  color: white;
+  width: 40%;
+}
+
+.color-habilidades5 {
+  background: red;
+  color: white;
+  width: 10%;
+}
+
+.img-cv {
+  max-width: 20%;
+  max-height: 30%;
+  display: block;
+  margin: auto;
+  /* los siguientes valores son independientes del tamaño del círculo */
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+}
+
+.titulo1 {
+  color: red;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.titulos {
+  color: red;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+hr {
+  height: 2px;
+  color: silver;
+}
+
+.row {
+  clear: both;
+}
+
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10 .col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10 {
+  float: left;
+}
+
+/*     CELULARES      */
+@media (max-width: 480px) {
+  .col-sm-1 {
+    width: 10%;
+  }
+
+  .col-sm-2 {
+    width: 20%;
+  }
+
+  .col-sm-3 {
+    width: 30%;
+  }
+
+  .col-sm-4 {
+    width: 40%;
+  }
+
+  .col-sm-5 {
+    width: 50%;
+  }
+
+  .col-sm-6 {
+    width: 60%;
+  }
+
+  .col-sm-7 {
+    width: 70%;
+  }
+
+  .col-sm-8 {
+    width: 80%;
+  }
+
+  .col-sm-9 {
+    width: 90%;
+  }
+
+  .col-sm-10 {
+    width: 100%;
+  }
+}
+
+/*       ESCRITORIO      */
+@media (min-width: 481px) {
+  .col-md-1 {
+    width: 10%;
+  }
+
+  .col-md-2 {
+    width: 20%;
+  }
+
+  .col-md-3 {
+    width: 30%;
+  }
+
+  .col-md-4 {
+    width: 40%;
+  }
+
+  .col-md-5 {
+    width: 50%;
+  }
+
+  .col-md-6 {
+    width: 60%;
+  }
+
+  .col-md-7 {
+    width: 70%;
+  }
+
+  .col-md-8 {
+    width: 80%;
+  }
+
+  .col-md-9 {
+    width: 90%;
+  }
+
+  .col-md-10 {
+    width: 100%;
+  }
+}
